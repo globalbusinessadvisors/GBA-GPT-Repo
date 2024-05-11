@@ -13,4 +13,4 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 
 # 💸 VC Startup Coach
 *Helpful guide for seed, series A-D startups to raise capital.*
-[INSTRUCTION](instructions/VC Startup Coach.txt) | GPT
+'[INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/instructions/VC Startup Coach.txt)' | GPT
