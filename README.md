@@ -11,6 +11,6 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 # Available GPTs created by GBA
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 💸 VC Startup Coach
+#### 💸 VC Startup Coach
 *Helpful guide for seed, series A-D startups to raise capital.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/instructions/VC%20Startup%20Coach.txt) | [GPT](https://chatgpt.com/g/g-kRapN6fhm-vc-startup-coach)
