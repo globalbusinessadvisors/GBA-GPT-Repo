@@ -1,5 +1,4 @@
-# gpts
-A collection of the GPTs created by GBA
+# The GBA ChatGPT GPT Repository
 
 
 ![DALL·E 2024-05-10 21 40 44 - A graphic design of a title for the 'GBA ChatGPT REPO'  The title should be prominently displayed in a sleek, modern font with a high-tech look  The b (1)](https://github.com/globalbusinessadvisors/gpts/assets/127058086/9bce2b8f-3651-4296-8a95-2eb75510dcd5)
