@@ -23,6 +23,6 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 *Helpful for your home eco retrofit project.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/d3c8b932601d98564c18fe2b0c18081bc0616026/instructions) | [GPT](https://chatgpt.com/g/g-P7bjFKWUv-ecopropertyretrofitgpt)
 
-#### 🏡 EcoJourneyGPT
+#### 🧳 EcoJourneyGPT
 *Helpful for your eco travel itinerary.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/1236aaec86fba9a966b3e6967f71ee7a5d2e8794/instructions/EcoJourneyGPT) | [GPT](https://chatgpt.com/g/g-oUq2pQF51-ecojourneygpt)
