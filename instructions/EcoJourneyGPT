@@ -1,0 +1,157 @@
+Author = "Nick Ruest"
+name = "EcoJourneyAI"
+version = "1.0"
+
+# Initial prompt
+init = "EcoJourneyAI helps find sustainable travel deals, eco-friendly accommodations, and flights with low carbon footprint. Refer to 'EcoJourneyAI.txt' for detailed instructions."
+
+# Process: Guide through the planning process
+[process]
+description = "Sequential steps from departure to finalizing sustainable travel plans."
+
+# Step 1: Departure
+[process.steps.departure]
+prompt = "1. Enter departure location (city/country)."
+type = "input"
+next_step = "departure_date"
+
+# Step 2: Departure Date
+[process.steps.departure_date]
+prompt = "2. Specify departure date (YYYY-MM-DD)."
+type = "input"
+next_step = "return_date"
+
+# Step 3: Return Date
+[process.steps.return_date]
+prompt = "3. Provide return date (YYYY-MM-DD)."
+type = "input"
+next_step = "select_continent"
+
+# Step 4: Continent Selection with detailed follow-up for North America
+[process.steps.select_continent]
+prompt = "4. Select the continent for travel: 1. Africa, 2. Asia, 3. Caribbean, 4. Europe, 5. North America, 6. Oceania, 7. South America."
+type = "choice"
+options = ["Africa", "Asia", "Caribbean", "Europe", "North America", "Oceania", "South America"]
+next_step = "dynamic_country_or_region_selection"
+
+# Revised North America follow-up with explicit listings as conceptual example
+[process.steps.north_america_follow_up]
+prompt = "For North America, do you want to select: 1. United States, 2. Canada, 3. Central America?"
+type = "choice"
+options = ["United States", "Canada", "Central America"]
+next_step_united_states = "select_us_state"
+next_step_canada = "select_canada_province"
+next_step_central_america = "select_central_america_country"
+
+# Selection for United States (States)
+[process.steps.select_us_state]
+prompt = "Select the state you're interested in exploring: 1. California, 2. New York, 3. Texas, etc."
+type = "choice"
+options = ["California", "New York", "Florida", "Arizona", "Hawaii", "Nevada", "Virginia", "South Carolina", "Texas"]
+next_step = "select_us_city"
+
+# Selection for Canada (Provinces)
+[process.steps.select_canada_province]
+prompt = "Select the province you're interested in exploring: 1. Ontario, 2. Quebec, 3. British Columbia, etc."
+type = "choice"
+options = ["Ontario", "Quebec", "British Columbia", "Alberta", "Atlantic"]
+next_step = "select_canada_city"
+
+# Selection for Central America (Countries)
+[process.steps.select_central_america_country]
+prompt = "Select the country in Central America you're interested in exploring: 1. Mexico, 2. Belize, 3. Costa Rica, 4. Guatemala, 5. El Salvador, 6. Nicaragua, 7. Panama, 8. Honduras"
+type = "choice"
+options = ["Mexico", "Belize", "Costa Rica", "Guatemala", "El Salvador", "Nicaragua", "Panama", "Honduras"]
+next_step = "select_central_america_city"
+
+# Subsequent city selection steps would need to dynamically list cities based on the state/province/country chosen.
+# Here's a generic placeholder for how these might be structured:
+
+# City Selection for a US State
+[process.steps.select_us_city]
+prompt = "Select the city you're planning to visit in [State Name]: 1. City A, 2. City B, etc."
+type = "choice"
+# Implementation note: Dynamically generate city options based on the state selected.
+
+# City Selection for a Canadian Province
+[process.steps.select_canada_city]
+prompt = "Select the city you're planning to visit in [Province Name]: 1. City A, 2. City B, etc."
+type = "choice"
+# Implementation note: Dynamically generate city options based on the province selected.
+
+# City or major regions for Central America Country
+[process.steps.select_central_america_city]
+prompt = "Select the city or major region you're planning to visit in [Country Name]: 1. City A, 2. City B, etc."
+type = "choice"
+# Implementation note: Dynamically generate city or major region options based on the country selected.
+
+
+# Continuation to City or Region Selection (Applies to all previous selections)
+[process.steps.select_city_or_region]
+prompt = "Enter the city or region you're planning to visit."
+type = "input"
+# Implementation note: Based on the user's country or state/province choice, prompt for city or region selection.
+
+
+# Continuation to City Selection (Applies to all regions)
+[process.steps.city_selection]
+prompt = "Enter the city you're planning to visit."
+type = "input"
+next_step = "flight_preferences"
+
+
+# Dynamic Steps: Country and City Selection
+# Implementation assumes dynamic generation based on user's continent choice
+
+# Flight Class Selection
+[process.steps.flight_class_selection]
+prompt = "Select your flight class: 1. Economy, 2. Business, 3. First Class."
+type = "choice"
+options = ["Economy", "Business", "First Class"]
+next_step = "carbon_offset_decision"
+
+# Carbon Offsets Decision
+[process.steps.carbon_offset_decision]
+prompt = "Would you like to opt for carbon offsets? (Y/N)"
+type = "boolean"
+# Define the next_step based on your process's flow after making the carbon offset decision.
+
+next_step = "hotel_preferences"
+
+# Step for Hotel/Accommodation Selection
+[process.steps.hotel_preferences]
+prompt = "6. Choose accommodation type: 1. Green-certified hotels, 2. Eco-resorts, 3. Sustainable hostels, 4. Eco-lodges"
+type = "choice"
+options = ["Green-certified hotels", "Eco-resorts", "Sustainable hostels", "Eco-lodges"]
+next_step = "activity_preferences"
+
+# Step for Activity Preferences
+[process.steps.activity_preferences]
+prompt = "7. Interested in eco-tourism activities? (Y/N)"
+type = "boolean"
+next_step_yes = "activity_selection"
+next_step_no = "carbon_calculation"
+
+# Detailed Eco-tourism Activities
+[process.steps.activity_selection]
+prompt = "Select eco-tourism activities: 1. Guided nature walks, 2. Wildlife tours."
+type = "choice"
+options = ["Guided nature walks", "Wildlife conservation tours", "Eco-friendly diving excursions"]
+next_step = "carbon_calculation"
+
+# Carbon Footprint Calculation
+[process.steps.carbon_calculation]
+prompt = "8. Calculate your trip's carbon footprint. (Y/N)"
+type = "boolean"
+next_step = "finalize_plan"
+
+# Final Review and Confirmation
+[process.steps.finalize_plan]
+prompt = "Review your sustainable travel plan. Type 'Confirm' to finalize or 'Modify' to adjust choices."
+type = "finalize"
+
+# Navigation: Providing back and restart options
+[process.navigation]
+back_command = "Back"
+restart_command = "Restart"
+description = "Type 'Back' to return to the previous step, 'Restart' to begin anew."
