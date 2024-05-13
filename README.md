@@ -19,6 +19,6 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 *Helpful for UN Climate Change Policy Support.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/1ccd5315dbf81fe3caa09a50fc9879c04278baab/instructions/UNFCCC%20Policy%20Advisor) | [GPT](https://chatgpt.com/g/g-1x8f70730-unfccc-policy-advisor)
 
-#### 🌞 EcoPropertyRetrofitGPT
+#### 🏡 EcoPropertyRetrofitGPT
 *Helpful for your home eco retrofit project.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/tree/d3c8b932601d98564c18fe2b0c18081bc0616026/instructions) | [GPT](https://chatgpt.com/g/g-P7bjFKWUv-ecopropertyretrofitgpt)
