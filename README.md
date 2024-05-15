@@ -28,5 +28,5 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/1236aaec86fba9a966b3e6967f71ee7a5d2e8794/instructions/EcoJourneyGPT) | [GPT](https://chatgpt.com/g/g-oUq2pQF51-ecojourneygpt)
 
 #### ⛓️ Supply Chain Carbon Insetting Advisor
-*Helpful for your eco travel itinerary.*
+*Helpful for identifying supply chain insetting opportunities for carbon abatement.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/b47ca7bcfb8d608f1c1014eeeced4232a8b4e081/instructions/Supply%20Chain%20Carbon%20Insetting%20Advisor) | [GPT](https://chatgpt.com/g/g-tT4SvPddE-supply-chain-carbon-insetting-advisor)
