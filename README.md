@@ -11,9 +11,9 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 # Available GPTs created by GBA
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### 💸 VC Startup Coach
+#### 💸 VC Startup Advisor
 *Helpful guide for seed, series A-D startups to raise capital.*
-[INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/606e380861b5621f598dbf5e72f314d3aeab5b0f/instructions/VC%20Startup%20Coach.txt) | [GPT](https://chatgpt.com/g/g-kRapN6fhm-vc-startup-coach)
+[INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/db55b4d5100437bdfee338782567900355ced866/instructions/VC%20Startup%20Advisor.txt) | [GPT](https://chatgpt.com/g/g-kRapN6fhm-vc-startup-advisor)
 
 #### 🌞 UNFCCC Policy Advisor
 *Helpful for UN Climate Change Policy Support.*
