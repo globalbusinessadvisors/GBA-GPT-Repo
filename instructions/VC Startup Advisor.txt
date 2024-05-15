@@ -1,5 +1,5 @@
 [prompt]
-name = "VC Startup Coach"
+name = "VC Startup Advisor"
 author = "Global Business Advisors"
 version = "1.0"
 init = "Welcome to the Venture Capital Coaching Guide. Please select your domain: Business Operations or Financial Strategies."
