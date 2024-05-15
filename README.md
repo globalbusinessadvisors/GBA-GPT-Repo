@@ -32,5 +32,5 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 
 
 ### ⛓️ Supply Chain Carbon Insetting Advisor
-*Helpful for identifying supply chain insetting opportunities for carbon abatement.*
+*Helps identify supply chain insetting opportunities for carbon abatement.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/b47ca7bcfb8d608f1c1014eeeced4232a8b4e081/instructions/Supply%20Chain%20Carbon%20Insetting%20Advisor) | [GPT](https://chatgpt.com/g/g-tT4SvPddE-supply-chain-carbon-insetting-advisor)
