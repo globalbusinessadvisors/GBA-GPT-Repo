@@ -15,17 +15,21 @@ Here, you'll find detailed instructions for each GPT model, enabling you to repl
 *Helpful guide for seed, series A-D startups to raise capital.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/db55b4d5100437bdfee338782567900355ced866/instructions/VC%20Startup%20Advisor.txt) | [GPT](https://chatgpt.com/g/g-kRapN6fhm-vc-startup-advisor)
 
+
 #### 🌞 UNFCCC Policy Advisor
 *Helpful for UN Climate Change Policy Support.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/1ccd5315dbf81fe3caa09a50fc9879c04278baab/instructions/UNFCCC%20Policy%20Advisor) | [GPT](https://chatgpt.com/g/g-1x8f70730-unfccc-policy-advisor)
+
 
 #### 🏡 EcoPropertyRetrofitGPT
 *Helpful for your home eco retrofit project.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/d3c8b932601d98564c18fe2b0c18081bc0616026/instructions) | [GPT](https://chatgpt.com/g/g-P7bjFKWUv-ecopropertyretrofitgpt)
 
+
 #### 🧳 EcoJourneyGPT
 *Helpful for your eco travel itinerary.*
 [INSTRUCTION](https://github.com/globalbusinessadvisors/gpts/blob/1236aaec86fba9a966b3e6967f71ee7a5d2e8794/instructions/EcoJourneyGPT) | [GPT](https://chatgpt.com/g/g-oUq2pQF51-ecojourneygpt)
+
 
 #### ⛓️ Supply Chain Carbon Insetting Advisor
 *Helpful for identifying supply chain insetting opportunities for carbon abatement.*
